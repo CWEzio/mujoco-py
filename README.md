@@ -176,3 +176,12 @@ This is somewhat dependent on internal OpenAI infrastructure at the moment, but 
 - Peter Welinder
 - Wojciech Zaremba
 - Jerry Tworek
+
+## Trouble Shooting (Added)
+- Missing GLFW version
+```
+sudo apt-get update -y
+sudo apt-get install -y libglew-dev
+```
+See this issue
+https://github.com/openai/mujoco-py/issues/268
