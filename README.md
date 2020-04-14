@@ -178,10 +178,11 @@ This is somewhat dependent on internal OpenAI infrastructure at the moment, but 
 - Jerry Tworek
 
 ## Trouble Shooting (Added)
-- Missing GLFW version
+- ERROR: GLEW initalization error: Missing GL version
 ```
 sudo apt-get update -y
 sudo apt-get install -y libglew-dev
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 ```
 See this issue
 https://github.com/openai/mujoco-py/issues/268
