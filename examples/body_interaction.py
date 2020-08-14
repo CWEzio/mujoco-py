@@ -51,6 +51,7 @@ sim = MjSim(model)
 viewer = MjViewer(sim)
 t = 0
 while True:
+    data = sim.data
     sim.data.ctrl[0] = math.cos(t / 10.) * 0.01
     sim.data.ctrl[1] = math.sin(t / 10.) * 0.01
     t += 1
